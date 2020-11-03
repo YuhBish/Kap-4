@@ -1,14 +1,13 @@
 import random
 
-gissning = float (input("Nummer, NU "))
+guess = 0
+correct = random.randint(1, 1000000)
+while guess != correct:
+    guess = int(input("Gissa rätt tal: "))
 
-while gissning !=8:
-    print ("Ha!, du suger")
-    if gissa < 8:
-        print ("nu blev de lite högt här")
-        break
-    elif gissning = 8:
-        print ("för lågt....")
-        break
-else:
-    print ("fan va tur du skulle ha då")
+    if guess < correct:
+        print("för lite")
+    
+    elif guess > correct:
+        print("för mycke")
+print ("rätt")
